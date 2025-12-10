@@ -1,0 +1,26 @@
+# Ambientes virtuais Python
+venv/
+.env/
+.venv/
+
+# Arquivos de configuração locais
+*.log
+*.yaml
+*.yml
+*.json
+
+# dbt compilados e artefatos
+target/
+dbt_packages/
+
+# Arquivos de credenciais
+.env
+.env.local
+.env.*.local
+
+# Cache
+__pycache__/
+*.pyc
+
+# IDEs
+.vscode
