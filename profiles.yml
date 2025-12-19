@@ -1,0 +1,20 @@
+projeto_prod:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: "{{ var('postgres_host') }}"  # Mudou de env_var para var
+      port: "{{ var('postgres_port') }}"
+      user: "{{ var('postgres_user') }}"
+      password: "{{ var('postgres_password') }}"
+      dbname: "{{ var('postgres_db') }}"
+      schema: "{{ var('postgres_dev_schema') }}"
+    
+    prod:
+      type: postgres
+      host: "{{ var('postgres_host') }}"
+      port: "{{ var('postgres_port') }}"
+      user: "{{ var('postgres_user') }}"
+      password: "{{ var('postgres_password') }}"
+      dbname: "{{ var('postgres_db') }}"
+      schema: "{{ var('postgres_prod_schema') }}"
